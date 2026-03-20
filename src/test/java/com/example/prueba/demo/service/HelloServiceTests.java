@@ -21,7 +21,7 @@ class HelloServiceTests {
     @DisplayName("Should return the correct greeting message")
     void testGetMessageReturnsCorrectMessage() {
         // Arrange
-        String expectedMessage = "Hello World from Spring Boot test7";
+        String expectedMessage = "Hello World from Spring Boot test10";
 
         // Act
         String actualMessage = helloService.getMessage();
