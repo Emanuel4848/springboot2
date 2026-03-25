@@ -37,7 +37,7 @@ class HelloControllerTests {
         String result = helloController.sayHello();
 
         // Assert
-        assertEquals("Hello World from Spring Boot test20", result);
+        assertEquals("Hello World from Spring Boot test21", result);
     }
 
     @Test
