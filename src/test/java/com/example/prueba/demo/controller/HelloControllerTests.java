@@ -36,8 +36,8 @@ class HelloControllerTests {
         // Act
         String result = helloController.sayHello();
 
-        // cambio rama registro
-        assertEquals("Hello World from Spring Boot test31", result);
+        // cambio final?
+        assertEquals("Hello World from Spring Boot test32", result);
     }
 
     @Test
