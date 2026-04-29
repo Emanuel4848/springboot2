@@ -1,0 +1,24 @@
+name: Deploy Consumer
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy en Consumer
+    runs-on: [self-hosted, consumer]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Ejecutar docker compose en consumer
+        run: |
+          cd /home/runner/app
+          docker compose pull
+          docker compose up -d
+          docker compose ps
