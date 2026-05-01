@@ -36,7 +36,7 @@ class HelloControllerTests {
         // Act
         String result = helloController.sayHello();
 
-        // cambio final??
+        // cambio final??Clase
         assertEquals("Hello World from Spring Boot test34", result);
     }
 
